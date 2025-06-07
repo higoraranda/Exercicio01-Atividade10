@@ -2,7 +2,8 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Cadastro e Login com Supabase</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autenticação com Supabase</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,18 +12,19 @@
     
     <div class="auth-options">
       <button id="signup-btn">Cadastrar</button>
-      <button id="login-btn">Login</button>
+      <button id="login-btn">Entrar</button>
     </div>
 
     <form id="auth-form" style="display: none;">
-      <input type="email" id="email" placeholder="E-mail" required>
-      <input type="password" id="password" placeholder="Senha" required>
+      <input type="email" id="email" placeholder="Seu e-mail" required>
+      <input type="password" id="password" placeholder="Sua senha" required>
       <button type="submit" id="submit-btn">Cadastrar</button>
     </form>
 
     <p id="message"></p>
   </div>
 
+  <!-- Script do Supabase DEVE vir primeiro -->
   <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
   <script src="script.js"></script>
 </body>
