@@ -2,19 +2,27 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Login com Supabase</title>
+  <title>Cadastro e Login com Supabase</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>Cadastro/Login</h1>
-    <form id="auth-form">
+    <h1>Bem-vindo!</h1>
+    
+    <div class="auth-options">
+      <button id="signup-btn">Cadastrar</button>
+      <button id="login-btn">Login</button>
+    </div>
+
+    <form id="auth-form" style="display: none;">
       <input type="email" id="email" placeholder="E-mail" required>
       <input type="password" id="password" placeholder="Senha" required>
-      <button type="submit">Entrar</button>
+      <button type="submit" id="submit-btn">Cadastrar</button>
     </form>
+
     <p id="message"></p>
   </div>
+
   <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
   <script src="script.js"></script>
 </body>
