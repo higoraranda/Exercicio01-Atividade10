@@ -53,3 +53,8 @@ input {
   margin-top: 10px;
   color: #333;
 }
+
+#auth-form {
+  display: none;
+  margin-top: 20px;
+}

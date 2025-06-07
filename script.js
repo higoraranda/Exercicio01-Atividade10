@@ -33,3 +33,11 @@ authForm.addEventListener('submit', async (e) => {
     else message.textContent = 'Login feito! Redirecionando...';
   }
 });
+
+console.log("Script carregado!"); 
+
+signupBtn.addEventListener('click', () => {
+  console.log("Cadastrar clicado!"); 
+  authForm.style.display = 'block';
+  submitBtn.textContent = 'Cadastrar';
+});
